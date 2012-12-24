@@ -1,0 +1,7 @@
+name = Leaflet MapBox
+description = Provides MapBox integration with MapBox
+core = 7.x
+
+dependencies[] = leaflet
+
+configure = admin/config/services/leaflet-mapbox
