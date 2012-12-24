@@ -42,11 +42,6 @@ function leaflet_mapbox_leaflet_map_info() {
     'zoomControl'        => TRUE,
   );
 
-  $maps['webpartners.map-5oxorhhf'] = array(
-    'label' => 'Jaime',
-    'description' => 'Description',
-  );
-
   $map_info = array();
   $code = variable_get('leaflet_mapbox_code', '');
   $map_info["leaflet-mapbox"] = array(
