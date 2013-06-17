@@ -32,12 +32,12 @@ function leaflet_mapbox_leaflet_map_info() {
     'dragging'           => TRUE,
     'fadeAnimation'      => TRUE,
     'layerControl'       => FALSE,
-    'maxZoom'            => 17,
+    'maxZoom'            => 19,
     'minZoom'            =>  0,
     'scrollWheelZoom'    => TRUE,
     'touchZoom'          => TRUE,
     'trackResize'        => TRUE,
-    'zoom'               =>  2,
+    'zoom'               => variable_get('leaflet_mapbox_zoomlevel', 2),
     'zoomAnimation'      => TRUE,
     'zoomControl'        => TRUE,
   );
@@ -51,7 +51,7 @@ function leaflet_mapbox_leaflet_map_info() {
     'layers' => array(
       'earth' => array(
         'urlTemplate' => "http://{s}.tiles.mapbox.com/v3/$code/{z}/{x}/{y}.png",
-        'options' => array('attribution' => '')
+        'options' => array('attribution' => ''),
       )
     )
   );
