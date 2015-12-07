@@ -12,5 +12,6 @@ function leaflet_mapbox_uninstall() {
   variable_del('leaflet_mapbox_label');
   variable_del('leaflet_mapbox_description');
   variable_del('leaflet_mapbox_code');
+  variable_del('leaflet_mapbox_token');
   variable_del('leaflet_mapbox_zoomlevel');
 }
