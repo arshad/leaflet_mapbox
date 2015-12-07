@@ -20,6 +20,13 @@ function leaflet_mapbox_configuration_form($form, &$form_state) {
     '#default_value' => variable_get('leaflet_mapbox_code', ''),
     '#description' => t('This code is obtained from MapBox by clicking on the mapbox.js button after publishing your map'),
   );
+  $form['leaflet_mapbox_token'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Map access token'),
+    '#required' => TRUE,
+    '#default_value' => variable_get('leaflet_mapbox_token', ''),
+    '#description' => t('You will find this in the mapbox user account settings'),
+  );
   $form['leaflet_mapbox_zoomlevel'] = array(
     '#type' => 'textfield',
     '#title' => t('Zoom Level'),

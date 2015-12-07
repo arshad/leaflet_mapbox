@@ -44,13 +44,14 @@ function leaflet_mapbox_leaflet_map_info() {
 
   $map_info = array();
   $code = variable_get('leaflet_mapbox_code', '');
+  $token = variable_get('leaflet_mapbox_token', '');
   $map_info["leaflet-mapbox"] = array(
     'label' => variable_get('leaflet_mapbox_label', ''),
     'description' => variable_get('leaflet_mapbox_description', ''),
     'settings' => $settings,
     'layers' => array(
       'earth' => array(
-        'urlTemplate' => "http://{s}.tiles.mapbox.com/v3/$code/{z}/{x}/{y}.png",
+        'urlTemplate' => "http://{s}.tiles.mapbox.com/v4/$code/{z}/{x}/{y}.png?access_token=$token",
         'options' => array('attribution' => ''),
       )
     )
